@@ -1,0 +1,22 @@
+\section{Algorithms}
+
+Algorithms\index{algorithms} are presented using pseudocode\index{pseudocode}. Algorithm~\ref{alg:example} shows a sample algorithm.
+
+\begin{algorithm}[H]
+    \caption{Example Algorithm for Optimization}
+    \label{alg:example}
+    \SetKwInOut{Input}{Input}
+    \SetKwInOut{Output}{Output}
+    \Input{Initial guess $x_0$, tolerance $\epsilon > 0$}
+    \Output{Optimal solution $x^*$}
+    Initialize $k \gets 0$\;
+    $x \gets x_0$\;
+    \While{$||\nabla f(x_k)|| > \epsilon$}{
+        Compute search direction: $d_k \gets -\nabla f(x_k)$\;
+        Compute step size: $\alpha_k \gets \arg\min_{\alpha} f(x_k + \alpha d_k)$\;
+        Update: $x_{k+1} \gets x_k + \alpha_k d_k$\;
+        $k \gets k + 1$\;
+    }
+    \Return{$x_k$}\;
+\end{algorithm}
+

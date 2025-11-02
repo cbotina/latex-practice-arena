@@ -1,0 +1,98 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bookmark}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{imakeidx}
+\makeindex
+
+% Page margins
+\geometry{margin=1in}
+
+% Theorem environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+
+% Code listing style
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    frame=single,
+    breaklines=true,
+    captionpos=b
+}
+
+% Title information
+\title{A Comprehensive Study of LaTeX Document Features\\
+\large Sample Scientific Paper}
+\author{Carlos Alberto Botina Carpio\\
+University of American Samoa\\
+\href{cbotina@americansamoa.edu}{cbotina@americansamoa.edu}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document serves as a comprehensive showcase of various LaTeX features commonly used in scientific papers. We demonstrate mathematical notation, including inline and display formulas, complex equations, and mathematical symbols. Additionally, we present various document elements such as lists, tables, figures, algorithms, and code listings. The purpose of this paper is to serve as a reference template for creating well-formatted scientific documents using LaTeX.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% Include section files
+\input{sections/01-introduction}
+\input{sections/02-mathematical-formulas}
+\input{sections/03-lists}
+\input{sections/04-tables}
+\input{sections/05-figures}
+\input{sections/06-graphs}
+\input{sections/07-algorithms}
+\input{sections/08-code-listings}
+\input{sections/09-theorems}
+\input{sections/10-cross-references}
+\input{sections/11-formatting}
+\input{sections/12-conclusion}
+
+% Bibliography and Index
+\printindex
+
+\begin{thebibliography}{99}
+
+\bibitem{einstein1905}
+A. Einstein, ``On the Electrodynamics of Moving Bodies,'' \textit{Annalen der Physik}, vol. 17, no. 10, pp. 891--921, 1905.
+
+\bibitem{newton1687}
+I. Newton, \textit{Philosophi\ae{} Naturalis Principia Mathematica}, London, 1687.
+
+\bibitem{knuth1984}
+D. E. Knuth, \textit{The \TeX{}book}, Addison-Wesley, 1984.
+
+\bibitem{lamport1994}
+L. Lamport, \textit{\LaTeX: A Document Preparation System}, 2nd ed., Addison-Wesley, 1994.
+
+\end{thebibliography}
+
+\end{document}

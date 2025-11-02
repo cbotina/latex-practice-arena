@@ -1,0 +1,24 @@
+\section{Figures and Images}
+
+Figures\index{figures} are crucial for visualizing results. Figure~\ref{fig:example} demonstrates how to include images\index{images} in a document.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/img1.png}
+    \caption{Example figure demonstrating data visualization. This could be a plot, diagram, or photograph relevant to the research.}
+    \label{fig:example}
+\end{figure}
+
+Multiple figures can be arranged in subfigures:
+
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{cc}
+        \includegraphics[width=0.45\textwidth]{img/img2.jpg} &
+        \includegraphics[width=0.45\textwidth]{img/img3.jpg} \\
+        (a) First subfigure & (b) Second subfigure
+    \end{tabular}
+    \caption{Multiple subfigures arranged side by side.}
+    \label{fig:subfigures}
+\end{figure}
+

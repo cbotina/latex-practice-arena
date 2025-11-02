@@ -1,0 +1,41 @@
+\section{Mathematical Formulas}\index{mathematical formulas|see{equations}}
+
+\subsection{Inline Mathematics}
+
+Mathematical expressions can be embedded within text, such as the famous Euler's formula: $e^{i\pi} + 1 = 0$, or Einstein's mass-energy equivalence $E = mc^2$. We can also express variables like $x$, $y$, and functions such as $f(x) = \int_{0}^{\infty} e^{-t^2} dt$.
+
+\subsection{Display Mathematics}
+
+For prominent equations, we use display mode:
+
+\begin{equation}
+    \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}
+    \label{eq:faraday}
+\end{equation}
+
+This is Faraday's law of electromagnetic induction. We can also express complex equations:
+
+\begin{align}
+    \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} &= -\frac{1}{\rho}\frac{\partial p}{\partial x} + \nu \frac{\partial^2 u}{\partial x^2} \label{eq:navier-stokes-1} \\
+    \frac{\partial \rho}{\partial t} + \frac{\partial (\rho u)}{\partial x} &= 0 \label{eq:continuity}
+\end{align}
+
+These equations represent the Navier-Stokes equations for fluid dynamics.
+
+\subsection{Advanced Mathematical Notations}
+
+We can express matrices:
+\begin{equation}
+    \mathbf{A} = \begin{pmatrix}
+        a_{11} & a_{12} & \cdots & a_{1n} \\
+        a_{21} & a_{22} & \cdots & a_{2n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{m1} & a_{m2} & \cdots & a_{mn}
+    \end{pmatrix}
+\end{equation}
+
+Or summations and products:
+\begin{equation}
+    \sum_{i=1}^{n} i = \frac{n(n+1)}{2}, \quad \prod_{i=1}^{n} i = n!
+\end{equation}
+

@@ -1,0 +1,37 @@
+\section{Tables}
+
+Tables\index{tables} are essential for presenting structured data. Table~\ref{tab:results} shows experimental results.
+
+\begin{table}[H]
+    \centering
+    \caption{Experimental Results Comparison}
+    \label{tab:results}
+    \begin{tabular}{lccc}
+        \toprule
+        Method & Accuracy (\%) & Precision (\%) & F1-Score \\
+        \midrule
+        Baseline & 85.2 & 82.1 & 0.836 \\
+        Method A & 89.7 & 87.3 & 0.885 \\
+        Method B & 91.4 & 89.6 & 0.905 \\
+        Method C & 93.8 & 92.1 & 0.929 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Another example with more complex formatting:
+
+\begin{table}[H]
+    \centering
+    \caption{Algorithm Performance Metrics}
+    \label{tab:performance}
+    \begin{tabular}{|l|r|r|r|}
+        \hline
+        \textbf{Algorithm} & \textbf{Time (s)} & \textbf{Memory (MB)} & \textbf{Iterations} \\
+        \hline
+        Gradient Descent & 12.34 & 256 & 1000 \\
+        Newton's Method & 3.45 & 512 & 15 \\
+        Conjugate Gradient & 8.76 & 384 & 150 \\
+        \hline
+    \end{tabular}
+\end{table}
+
